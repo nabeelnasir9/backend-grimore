@@ -19,8 +19,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "infosynthseer@gmail.com",
-    pass: "kegj ytci koqp dveq",
+    user: "TheGrimoreAi@gmail.com",
+    pass: "lrlz ahli awlj mlcb",
   },
 });
 
@@ -92,8 +92,8 @@ router.post("/signup", async (req, res) => {
                     <td>
                       <img
                         alt=""
-                        src="https://i.ibb.co/cwfy96W/synthseer.png"
-                        height="30px"
+                        src="https://i.ibb.co/4s74W2h/grimore-white.png"
+                        height="80px"
                       />
                     </td>
                   </tr>
@@ -141,11 +141,11 @@ router.post("/signup", async (req, res) => {
                       letter-spacing: 0.56px;
                     "
                   >
-                    Thank you for choosing Synthseer. Use the following OTP
+                    Thank you for choosing Grimore. Use the following OTP
                     to complete the procedure to change your email address. OTP is
                     valid for
                     <span style="font-weight: 600; color: #1f1f1f;">5 minutes</span>.
-                    Do not share this code with others, including Synthseer
+                    Do not share this code with others, including Grimore
                     employees.
                   </p>
                   <p
@@ -155,7 +155,7 @@ router.post("/signup", async (req, res) => {
                       font-size: 40px;
                       font-weight: 600;
                       letter-spacing: 25px;
-                      color: #9034ca;
+                      color: #8C52FF;
                     "
                   >
                     ${otp}
@@ -175,15 +175,15 @@ router.post("/signup", async (req, res) => {
               >
                 Need help? Ask at
                 <a
-                  href="mailto:synthseer@gmail.com"
-                  style="color: #9034ca; text-decoration: none;"
-                  >synthseer@gmail.com</a
+                  href="mailto:grimore@gmail.com"
+                  style="color: #8C52FF; text-decoration: none;"
+                  >grimore@gmail.com</a
                 >
                 or visit our
                 <a
                   href=""
                   target="_blank"
-                  style="color: #9034ca; text-decoration: none;"
+                  style="color: #8C52FF; text-decoration: none;"
                   >Help Center</a
                 >
               </p>
@@ -195,7 +195,7 @@ router.post("/signup", async (req, res) => {
                 max-width: 490px;
                 margin: 20px auto 0;
                 text-align: center;
-                border-top: 1px solid #e6ebf1;
+                border-top: 1px solid #8C52FF;
               "
             >
               <p
@@ -207,12 +207,12 @@ router.post("/signup", async (req, res) => {
                   color: #434343;
                 "
               >
-              SYNTHSEER              </p>
-              <p style="margin: 0; margin-top: 8px; color: #434343;">
+              Grimore             </p>
+              <p style="margin: 0; margin-top: 8px; color: #8C52FF;">
                 Address 540, City, State.
               </p>
               <p style="margin: 0; margin-top: 16px; color: #434343;">
-                Copyright © 2025 Synthseer. All rights reserved.
+                Copyright © 2025 Grimore. All rights reserved.
               </p>
             </footer>
           </div>
@@ -537,7 +537,7 @@ router.post("/forgot-password", async (req, res) => {
           <body>
             <div class="container">
               <div class="header">
-                <img src="https://i.ibb.co/cwfy96W/synthseer.png" alt="Synthseer Logo">
+                <img src="https://i.ibb.co/4s74W2h/grimore-white.png" alt="Synthseer Logo">
               </div>
               <div class="content">
                 <h1>Password Reset Request</h1>
@@ -546,8 +546,8 @@ router.post("/forgot-password", async (req, res) => {
                 <a href="${resetUrl}">Reset Password</a>
               </div>
               <div class="footer">
-                <p>Need help? Contact us at <a href="mailto:synthseer@gmail.com">synthseer@gmail.com</a></p>
-                <p>&copy; 2025 Synthseer. All rights reserved.</p>
+                <p>Need help? Contact us at <a href="mailto:grimore@gmail.com">grimore@gmail.com</a></p>
+                <p>&copy; 2025 Grimore. All rights reserved.</p>
               </div>
             </div>
           </body>

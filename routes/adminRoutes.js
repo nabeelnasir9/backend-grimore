@@ -20,7 +20,7 @@ router.get("/all-users", async (_req, res) => {
       for (const order of user.orders) {
         try {
           const session = await stripe.checkout.sessions.retrieve(
-            order.sessionId,
+            order.sessionId
           );
           order.shipping = session;
           await order.save();
@@ -87,7 +87,7 @@ router.post("/update-status", async (req, res) => {
     const order = await Order.findByIdAndUpdate(
       orderId,
       { delivery_status: deliveryStatus },
-      { new: true },
+      { new: true }
     );
     if (!order) {
       return res.status(404).json({ message: "Order not found" });
@@ -133,12 +133,12 @@ router.post("/prompt-editor", async (req, res) => {
         const existingPrompt = await Prompt.findOneAndUpdate(
           { _id: updatedPrompt._id },
           { prompt: updatedPrompt.prompt },
-          { new: true },
+          { new: true }
         );
         if (!existingPrompt) {
           throw new Error(`Prompt with ID ${updatedPrompt._id} not found`);
         }
-      }),
+      })
     );
     const updatedPromptsFromDB = await Prompt.find();
     res.status(200).json(updatedPromptsFromDB);

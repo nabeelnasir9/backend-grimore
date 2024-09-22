@@ -226,7 +226,7 @@ router.post("/multi", async (req, res) => {
       data: {
         prompt: `https://utfs.io/f/d9922e94-2d4d-40ce-b669-402d759db824-3wntx9.jpg ${processedSinglePrompt}`,
         aspect_ratio: "1:2",
-        process_mode: "relax",
+        process_mode: "fast",
         webhook_endpoint: "",
         webhook_secret: "",
       },
@@ -328,7 +328,7 @@ router.post("/edit", async (req, res) => {
       data: {
         prompt: `${body.imgUrl} ${body.prompt}`,
         aspect_ratio: "1:2",
-        process_mode: "relax",
+        process_mode: "fast",
         webhook_endpoint: "",
         webhook_secret: "",
       },
